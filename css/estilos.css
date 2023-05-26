@@ -1,0 +1,206 @@
+body{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
+}
+
+.bg-dark{background-color: var(--dark) !important;}
+.bg-dark-x{background-color: var(--dark-x);}
+
+.form-control{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+.img-1{
+    background-image: url('../img/acevedo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2{
+    background-image: url('../img/halaand.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3{
+    background-image: url('../img/mbape.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img-4{
+    background-image: url('../img/chucky.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img-5{
+    background-image: url('../img/messi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-6{
+    background-image: url('../img/ronaldo.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-7{
+    background-image: url('../img/santos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    text-shadow: black 0.1em 0.1em 0.2em, -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    
+   }
+
+
+.main{
+    background-image: url('../img/chucky.jpg');
+    padding: 161px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+
+}
+
+.form{
+    width: 60%;
+    padding: 45px;
+    border-radius: 0;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row-form{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.col-md-7{
+    padding: 20px;
+}
+
+.col-md-5{
+    background-color: #243B55;
+    padding: 20px;
+    color: white;
+
+}
+
+.flotar{
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.form-control{
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none! important;
+    border: 1px solid rgba(0, 0, 0, 0.1) 
+
+}
+
+.container_Api {
+    width: 50%;
+    margin: 150px auto auto auto;
+    padding: 50px 10px;
+    background: var(--dark);
+    opacity: 0.8;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 296px 75px 296px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "img1 versus img2"
+      "nombre versus nombre2";
+  }
+
+#img1 {
+    grid-area: img1;
+  }
+  #versus {
+    grid-area: versus;
+    padding: 40px 0;
+  }
+  #img2 {
+    grid-area: img2;
+  }
+  
+  #nombre {
+    grid-area: nombre;
+  }
+  #nombre2 {
+    grid-area: nombre2;
+  }
+  .container_Api p {
+    color: #fff;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+  }
+
+  .submenu{
+    position: relative;
+  }
+
+  .submenu #carrito{
+    display: none;
+  }
+
+  .submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th, td{
+    color: #feffff;
+  }
+
+  .borrar{
+    background-color: var(--dark);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #feffff;
+    font-weight: 800;
+  }
